@@ -6,6 +6,4 @@ then
 	exit 1
 fi
 
-gcc -S $1 -o tmp
-cat tmp | less
-rm tmp
+gcc -S $1 -o tmp && cat tmp | less; rm tmp
