@@ -6,4 +6,4 @@ then
 	exit 1
 fi
 
-gcc -S "$@" -o .asm && cat .asm | less; rm .asm
+gcc -S $1 -o .asm && cat .asm | less; rm .asm
